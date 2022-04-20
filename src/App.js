@@ -28,13 +28,9 @@ class App extends Component{
     this.setState({hexBg: hB})
     this.setState({hexTC: hT})
     this.setState({show:!this.state.show})
-
-    
-
   }
 
-  handleToggleClick = () => {
-    
+  handleToggleClick = () => {  
     this.setState({showlist : !this.state.showlist})
   }
 
@@ -42,9 +38,7 @@ class App extends Component{
     return (
       <div style = {{backgroundColor:this.state.hexBg, color:this.state.hexTC}}>
         <Clock user = {this.state.user}/>
-        
         <div></div>
-        
         <Transaction/>
         <br></br>
         <div>
